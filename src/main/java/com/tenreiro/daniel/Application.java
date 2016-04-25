@@ -9,16 +9,27 @@ import org.springframework.boot.context.embedded.tomcat.TomcatConnectorCustomize
 import org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory;
 import org.springframework.context.annotation.Bean;
 
-@SpringBootApplication
+/**
+ * Main class of the project
+ * Run with --debug to see how Spring Boot auto configures the Application
+ *
+ * SpringBootApplication
+ *
+ * @author Daniel Tenreiro - dtenreiroarcos@gmail.com
+ */
+@SpringBootApplication // Equivalent to put @Configuration @EnableAutoConfiguration @ComponentScan
 public class Application {
 
+    /**
+     * Run this class to start the Spring Boot Application and the Tomcat
+     */
     public static void main(String[] args) {
         SpringApplication springApplication = new SpringApplication(Application.class);
         springApplication.run(args);
     }
 
     /**
-     *
+     * Bean definition with the Embedded customized Tomcat
      */
     @Bean
     public EmbeddedServletContainerCustomizer servletContainerCustomizer() {
