@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -war target/springbootwithtomcatbaseproject-1.war
+web: java -Dserver.port=$PORT -jar target/springbootwithtomcatbaseproject-1.jar
