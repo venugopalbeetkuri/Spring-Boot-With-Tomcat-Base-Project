@@ -36,10 +36,40 @@
         </dependency>
 
     </dependencies>
+    
+    
+    
+    
+    
+<build>
+    <plugins>
+        <plugin>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-maven-plugin</artifactId>
+  <executions>
+    <execution>
+      <goals>
+        <goal>repackage</goal>
+      </goals>
+      <configuration>
+        <mainClass>com.tenreiro.daniel.Application</mainClass>
+      </configuration>
+    </execution>
+  </executions>
+</plugin>
+    </plugins>
+</build>
+    
+    
+    
+    
+    
+    
+    
 
-	<build>
+<!-- 	<build>
 
-		<plugins>
+		<plugins> -->
 
 			<!-- Maven WAR Plugin to create a WAR file with the application -->
 <!-- 			<plugin>
@@ -55,7 +85,7 @@
 				</configuration>
 			</plugin> -->
 
-	<plugin>
+<!-- 	<plugin>
 		<groupId>org.apache.maven.plugins</groupId>
 		<artifactId>maven-jar-plugin</artifactId>
 		<configuration>
@@ -64,14 +94,14 @@
 					<mainClass>com.tenreiro.daniel.Application</mainClass>
 				</manifest>
 			</archive>
-	<descriptorRefs>
-		<descriptorRef>jar-with-dependencies</descriptorRef>
-	</descriptorRefs>
+			<descriptorRefs>
+				<descriptorRef>jar-with-dependencies</descriptorRef>
+			</descriptorRefs>
 		</configuration>
 	</plugin>
 
 		</plugins>
 
-	</build>
+	</build> -->
 
 </project>
