@@ -1,5 +1,5 @@
 server:
-    port: 8180
+    port: 80
     context-path: /test
     tomcat:
         basedir: /var/tmp/spring_boot_with_tomcat_base_project
