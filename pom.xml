@@ -37,26 +37,31 @@
 
     </dependencies>
 
-    <build>
+	<build>
 
-        <plugins>
+		<plugins>
 
-            <!-- Maven WAR Plugin to create a WAR file with the application -->
-            <plugin>
-            <artifactId>maven-war-plugin</artifactId>
-            <configuration>
-                <archive>
-                    <manifest>
-                        <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                        <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                    </manifest>
-                </archive>
-                <archiveClasses>true</archiveClasses>
-            </configuration>
-            </plugin>
+			<!-- Maven WAR Plugin to create a WAR file with the application -->
+<!-- 			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+						</manifest>
+					</archive>
+					<archiveClasses>true</archiveClasses>
+				</configuration>
+			</plugin> -->
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+			</plugin>
 
-        </plugins>
+		</plugins>
 
-    </build>
+	</build>
 
 </project>
