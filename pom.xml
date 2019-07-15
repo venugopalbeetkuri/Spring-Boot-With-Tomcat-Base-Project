@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.tenreiro.daniel</groupId>
     <artifactId>springbootwithtomcatbaseproject</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version></version>
     <packaging>war</packaging>
 
     <name>spring-boot-with-tomcat-base-project</name>
