@@ -54,11 +54,18 @@
 					<archiveClasses>true</archiveClasses>
 				</configuration>
 			</plugin> -->
-			
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-			</plugin>
+
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-jar-plugin</artifactId>
+		<configuration>
+			<archive>
+				<manifest>
+					<mainClass>com.tenreiro.daniel.Application</mainClass>
+				</manifest>
+			</archive>
+		</configuration>
+	</plugin>
 
 		</plugins>
 
