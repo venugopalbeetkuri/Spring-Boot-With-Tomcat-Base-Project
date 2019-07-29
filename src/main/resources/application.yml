@@ -1,5 +1,5 @@
 server:
     port: 80
-    context-path: /hello_world
+    context-path: /mobileapp
     tomcat:
         basedir: /var/tmp/spring_boot_with_tomcat_base_project
